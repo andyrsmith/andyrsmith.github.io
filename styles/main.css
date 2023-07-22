@@ -5,8 +5,8 @@
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
-    --bg-color: #fcfcfc;
-    --primary-color: #4756df;
+    --bg-color: #22223B;
+    --primary-color: #9A8C98;
     --secondary-color: #ff7235;
     --primary-shadow: #8b8eaf;
     --secondary-shadow: #a17a69;
@@ -98,7 +98,7 @@ nav ul li {
     overflow: hidden;
     display: grid;
     place-items: center;
-    background-color: #048BA8;
+    background-color: #4A4E69;
 }
 .workspace {
     display: flex;
@@ -156,7 +156,7 @@ nav ul li {
 }
 .leg {
     width: 2vh;
-    height: 40vh;
+    height: 33vh;
     margin: 0 35vh;
     background: #2e4057;
     border: 1px solid black;
