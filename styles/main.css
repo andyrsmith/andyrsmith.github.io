@@ -96,7 +96,7 @@ nav ul li {
     width: 100vw;
     height: 90vh;
     overflow: hidden;
-    display: grid;
+    padding-top: 5em;
     place-items: center;
     background-color: #4A4E69;
 }
@@ -133,7 +133,7 @@ nav ul li {
     border: 1px solid #000000;
 }
 .top {
-    width: 100vh;
+    width: 90vh;
     height: 5vh;
     background-color: #995136;
     border: 1px solid black;
