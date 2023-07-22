@@ -47,7 +47,7 @@ nav {
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -162,6 +162,12 @@ nav ul li {
     border: 1px solid black;
     z-index: 2;
 } 
+
+.project-container {
+    width: 100%;
+    height: 300vh;
+    background-color: var(--bg-color);
+}
 
 @media screen and (max-width: 720px) {
     nav {
