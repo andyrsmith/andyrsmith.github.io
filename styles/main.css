@@ -93,10 +93,10 @@ nav ul li {
 }
 
 .banner {
-    width: 100vw;
+    width: 100%;
     height: 90vh;
     overflow: hidden;
-    padding-top: 5em;
+    padding-top: 3em;
     place-items: center;
     background-color: #4A4E69;
 }
@@ -106,8 +106,8 @@ nav ul li {
     align-items: center;
 }
 .computer {
-    width: 40vh;
-    height: 25vh;
+    width: 27em;
+    height: 16em;
     background-color: #e8e2da;
     border: 1px solid #000000;
 }
@@ -115,25 +115,25 @@ nav ul li {
     height: 80%;
     width: 90%;
     border: 2px solid #000000;
-    margin-top: 1vh;
-    margin-left: 1.5vh;
+    margin-top: 1em;
+    margin-left: 4.9%;
     background-color: #000000;
 }
 .stand {
-    width: 10vh;
-    height: 5vh;
+    width: 6em;
+    height: 4em;
     background-color: #e8e2da; 
     border-left: 1px solid #000000;
     border-right: 1px solid #000000;
 }
 .base {
-    width: 20vh;
-    height: 2vh;
+    width: 12em;
+    height: 1em;
     background-color: #e8e2da;
     border: 1px solid #000000;
 }
 .top {
-    width: 90vh;
+    width: 50em;
     height: 5vh;
     background-color: #995136;
     border: 1px solid black;
@@ -147,7 +147,7 @@ nav ul li {
     display: flex;
 }
 .left-leg {  
-    width: 2vh;
+    width: 2vw;
     height: 50vh;
     background: #2e4057;
     border: 1px solid black;
@@ -155,9 +155,9 @@ nav ul li {
     z-index: 2;
 }
 .leg {
-    width: 2vh;
+    width: 2vw;
     height: 33vh;
-    margin: 0 35vh;
+    margin: 0 20em;
     background: #2e4057;
     border: 1px solid black;
     z-index: 2;
@@ -226,5 +226,15 @@ nav ul li {
 
     nav ul.show {
         transform: translateX(0);
+    }
+    .banner {
+        height: 50vh;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .computer {
+        width: 23em;
     }
 }
