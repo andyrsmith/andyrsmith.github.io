@@ -182,6 +182,38 @@ nav ul li {
     padding-bottom: 5em;
 }
 
+.about-me {
+    background-color: var(--bg-color);
+    padding-top: 4em;
+}
+
+.about-me h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.about-me p {
+    color: var(--primary-shadow);
+    margin-left: 3em;
+    letter-spacing: 0.05rem;
+}
+
+.about-me .about-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5em;
+    padding-bottom: 2em;
+}
+
+.about-me .about-bubble {
+    background-color: #4A4E69;
+    width: 30em;
+    margin-right: 25em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-radius: 2em;
+}
+
 
 .project {
     margin-top: 2em;
