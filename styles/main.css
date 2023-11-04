@@ -5,8 +5,8 @@
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
-    --bg-color: #22223B;
-    --primary-color: #9A8C98;
+    --bg-color: rgb(28, 24, 40);
+    --primary-color: rgb(220, 215, 242);
     --secondary-color: #ff7235;
     --primary-shadow: #8b8eaf;
     --secondary-shadow: #a17a69;
@@ -18,6 +18,10 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
 }
 
 * {
@@ -163,6 +167,16 @@ nav ul li {
     z-index: 2;
 }
 
+.post-content {
+    margin: 0em auto;
+    width: 50%;
+    padding-top: 7em;
+    padding-bottom: 7em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border-radius: 1em;
+}
+
 .sample-projects {
     background-color: var(--bg-color);
     padding-top: 4em;
@@ -229,7 +243,42 @@ nav ul li {
    height: 250px;
 }
 
+body h2, body p, body h3 {
+    color: var(--primary-color);
+}
 
+.post h2 {
+    margin-bottom: 1em;
+    font-size: 30px;
+}
+
+.post p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.language-plaintext {
+    background-color: rgba(220, 215, 242, 0.133);
+    border-radius: 1em;
+    padding: 2em;
+    margin: 2em 1em;
+    color: rgb(220, 215, 242);
+    
+}
+
+@media screen and (max-width: 1600px) {
+    .post-content {
+        width: 65%;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .post-content {
+        width: 75%;
+    }
+}
 
 @media screen and (max-width: 720px) {
     nav {
@@ -261,6 +310,10 @@ nav ul li {
     }
     .banner {
         height: 50vh;
+    }
+
+    .post-content {
+        width: 100%;
     }
 
 }
