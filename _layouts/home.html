@@ -17,7 +17,7 @@ layout: default
         </div>
     </div>
 </section>
-<section>
+<!-- <section>
     <div class="about-me" id="about">
         <h2>About Me</h2>
         <div class="about-container">
@@ -26,6 +26,19 @@ layout: default
             </div>
         </div>
     <div>
+</section> --> 
+<section>
+    <div class="recent-post">
+        <h2 class="centered-heading">Recent Posts</h2>
+        <ul class="post-container">
+            {% for post in site.posts limit:3 %}
+              <li> 
+                  <h3><a href="{{post.url}}">{{post.title}}</a></h3>
+                  <p>{{post.summary}}</p>
+              </li>
+            {% endfor %}
+        </ul>
+    </div>
 </section>
 <section> 
     <div class="sample-projects" id="projects">
@@ -36,16 +49,19 @@ layout: default
             <a href="https://github.com/andyrsmith/tetris-in-c">
                 <img src="images/tetris2.gif" alt="Animated Gif of Tetris"/>
             </a>
+            <p>Tetris developed using C and Ncurses</p>
         </div>
         <div class="project">
             <h3>Ray Casting in Javascript</h2>
             <img src="images/ray-casting2.gif" alt="Animated Gif of Raycasting"/>
+            <p>A Ray Caster uses Javascript and the canvas API</p>
         </div>
         <div class="project">
             <h3>Dungeon Crawler in Phaser</h2>
             <a href="https://github.com/andyrsmith/dungeon-crawler"> 
                 <img src="images/dungeon-crawler2.gif" alt="Animated Gif of Dungeon Crawler Game"/>
             </a>
+            <p>A short dungeon crawler using Phaser game framework</p>
         </div>
     </div>
     </div>

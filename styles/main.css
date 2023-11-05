@@ -171,6 +171,10 @@ nav ul li {
     z-index: 2;
 }
 
+.recent-post {
+    padding-top: 4em;
+}
+
 .post-content {
     margin: 0em auto;
     width: 50%;
@@ -179,6 +183,10 @@ nav ul li {
     padding-left: 3em;
     padding-right: 3em;
     border-radius: 1em;
+}
+
+.post-container p, .project-container p {
+    margin-top: 1em;
 }
 
 .sample-projects {
@@ -200,9 +208,26 @@ nav ul li {
     padding-bottom: 5em;
 }
 
+.post-container li {
+    margin-top: 2em;
+}
+
+.post-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 2em;
+    padding-bottom: 5em;
+}
+
 .about-me {
     background-color: var(--bg-color);
     padding-top: 4em;
+}
+.centered-heading {
+    color: var(--primary-color);
+    text-align: center;
 }
 
 .about-me h2 {
