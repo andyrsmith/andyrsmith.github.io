@@ -5,8 +5,8 @@
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
-    --bg-color: #22223B;
-    --primary-color: #9A8C98;
+    --bg-color: rgb(28, 24, 40);
+    --primary-color: rgb(220, 215, 242);
     --secondary-color: #ff7235;
     --primary-shadow: #8b8eaf;
     --secondary-shadow: #a17a69;
@@ -20,10 +20,30 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: var(--bg-color);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 20px;
 }
 
 ul {
@@ -163,6 +183,24 @@ nav ul li {
     z-index: 2;
 }
 
+.recent-post {
+    padding-top: 4em;
+}
+
+.post-content {
+    margin: 0em auto;
+    width: 50%;
+    padding-top: 7em;
+    padding-bottom: 7em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border-radius: 1em;
+}
+
+.post-container p, .project-container p {
+    margin-top: 1em;
+}
+
 .sample-projects {
     background-color: var(--bg-color);
     padding-top: 4em;
@@ -182,9 +220,26 @@ nav ul li {
     padding-bottom: 5em;
 }
 
+.post-container li {
+    margin-top: 2em;
+}
+
+.post-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 2em;
+    padding-bottom: 5em;
+}
+
 .about-me {
     background-color: var(--bg-color);
     padding-top: 4em;
+}
+.centered-heading {
+    color: var(--primary-color);
+    text-align: center;
 }
 
 .about-me h2 {
@@ -217,6 +272,11 @@ nav ul li {
 
 .project {
     margin-top: 2em;
+    flex-basis: min-content;
+}
+
+.project p {
+    width: 80%;
 }
 
 .project h3 {
@@ -229,7 +289,67 @@ nav ul li {
    height: 250px;
 }
 
+body h2, body p, body h3 {
+    color: var(--primary-color);
+}
+  
+.post h2{
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: 30px;
+}
+.post-collection h1 {
+    font-size: 40px;
+    margin-bottom: 2em;
+}
+.post-collection h2 {
+    font-size: 30px;
+}
 
+.post p, .post-collection p {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.post p {
+    margin-top: 1em;
+}
+
+.post-collection p.summary {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.post-collection p.date {
+    font-style: italic;
+}
+
+.post-collection li {
+    margin-bottom: 4em;
+}
+
+.language-plaintext {
+    background-color: rgba(220, 215, 242, 0.133);
+    border-radius: 1em;
+    padding: 2em;
+    margin: 2em 1em;
+    color: rgb(220, 215, 242);
+    
+}
+
+@media screen and (max-width: 1600px) {
+    .post-content {
+        width: 65%;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .post-content {
+        width: 75%;
+    }
+}
 
 @media screen and (max-width: 720px) {
     nav {
@@ -261,6 +381,10 @@ nav ul li {
     }
     .banner {
         height: 50vh;
+    }
+
+    .post-content {
+        width: 100%;
     }
 
 }
