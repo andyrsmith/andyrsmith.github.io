@@ -30,8 +30,20 @@ body {
     box-sizing: border-box;
 }
 
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
 h1 {
     color: var(--primary-color);
+}
+
+p {
+    font-size: 20px;
 }
 
 ul {
@@ -260,6 +272,11 @@ nav ul li {
 
 .project {
     margin-top: 2em;
+    flex-basis: min-content;
+}
+
+.project p {
+    width: 80%;
 }
 
 .project h3 {
@@ -278,6 +295,7 @@ body h2, body p, body h3 {
   
 .post h2{
     margin-bottom: 1em;
+    margin-top: 1em;
     font-size: 30px;
 }
 .post-collection h1 {
@@ -289,8 +307,12 @@ body h2, body p, body h3 {
 }
 
 .post p, .post-collection p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 26px;
+}
+
+.post p {
+    margin-top: 1em;
 }
 
 .post-collection p.summary {
