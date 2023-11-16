@@ -2,7 +2,7 @@
 layout: post
 title: Create Shapes using Bevy
 author: Andy
-summary: Lets add a rectangle to our project
+summary: Adding a rectangle in Bevy
 ---
 
 Where I last left off we just had a blank window, so now I'll add something to that.
