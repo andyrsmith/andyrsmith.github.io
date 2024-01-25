@@ -2,7 +2,7 @@
 layout: post
 title:  Creating Enemies
 author: Andy
-summary: Adding enimies and setting up collision detection
+summary: Adding enemies and setting up collision detection
 ---
 
 Next up we should add some enemies.  In my setup_game function I added a new spawn to create this one zombie.
