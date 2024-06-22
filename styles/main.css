@@ -216,25 +216,6 @@ nav ul li {
     margin-top: 1em;
 }
 
-.sample-projects {
-    background-color: var(--bg-color);
-    padding-top: 4em;
-}
-
-.sample-projects h2 {
-    color: var(--primary-color);
-    text-align: center;
-}
-
-.project-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-top: 2em;
-    padding-bottom: 5em;
-}
-
 .post-container li {
     margin-top: 2em;
 }
@@ -248,60 +229,9 @@ nav ul li {
     padding-bottom: 5em;
 }
 
-.about-me {
-    background-color: var(--bg-color);
-    padding-top: 4em;
-}
 .centered-heading {
     color: var(--primary-color);
     text-align: center;
-}
-
-.about-me h2 {
-    color: var(--primary-color);
-    text-align: center;
-}
-
-.about-me p {
-    color: var(--primary-shadow);
-    margin-left: 3em;
-    letter-spacing: 0.05rem;
-}
-
-.about-me .about-container {
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 5em;
-    padding-bottom: 2em;
-}
-
-.about-me .about-bubble {
-    background-color: #4A4E69;
-    width: 30em;
-    margin-right: 25em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    border-radius: 2em;
-}
-
-
-.project {
-    margin-top: 2em;
-    flex-basis: min-content;
-}
-
-.project p {
-    width: 80%;
-}
-
-.project h3 {
-    color: var(--primary-color);
-    margin-bottom: 1em;
-    text-align: center;
-}
-
-.project img {
-   height: 250px;
 }
 
 body h2, body p, body h3 {
