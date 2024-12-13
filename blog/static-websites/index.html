@@ -1,0 +1,51 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Static Websites</title>
+        <meta name="description" content="Collected Notes static websites using Vercel
+
+Imagine being able to create a custom static website and update it's contents righ..."/>
+        <link rel="stylesheet" href="/css/global.css" />
+    </head>
+        <body class="post">
+            <header>
+                <a href="/blog/">&larr; back</a>
+            </header>
+            <main>
+                <h1>Static Websites</h1>
+<p><img src="https://photos.collectednotes.com/photos/1/a691ff7c-f949-49a1-abbb-a1872e130eff" alt="Collected Notes static websites using Vercel"></p>
+<p>Imagine being able to create a custom static website and update it's contents right from your phone <strong>without having to redeploy it</strong>!</p>
+<p>That's exactly what we built. You can now use our <a href="https://github.com/Collected-Notes/static-template-nextjs">Next.js template</a> to automatically fetch your notes via the API and refresh your static website instantly. No redeploy. No commands to run. No webhooks. It just works.</p>
+<p>We are leveraging the “<a href="https://nextjs.org/blog/next-9-5#stable-incremental-static-regeneration">Incremental Static Regeneration</a>” feature of Next.js to keep the static website and your Collected notes in sync.</p>
+<h2>Features</h2>
+<ul>
+<li><strong>Incremental Regeneration</strong> - Deploy once and get incremental updates on your site everytime you create or update notes.</li>
+<li><strong>Dark Mode Support</strong> - Detect from system preference and per-site support user preference.</li>
+<li><strong>Links on the note</strong> - List all the links used at the bottom of each note.</li>
+<li><strong>Search</strong> - Search between all of your notes.</li>
+<li><strong>Easy to customize</strong> - Create a new repo based on this way and start customizing the look &amp; feel.</li>
+</ul>
+<hr>
+<h2>Get Started</h2>
+<p>Make sure you have created a Collected Notes <a href="https://collectednotes.com/accounts/me/subscription">premium account</a>. Then go to your site settings and click on “Create static website”, it should take you to the <a href="https://collectednotes.com/sites/static">static deployments page</a>.</p>
+<h3>Step 1: Create your static deployment</h3>
+<p>Click on the “Deploy with Vercel” button and follow the instructions.</p>
+<p><a href="https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2FCollected-Notes%2Fstatic-template-nextjs&amp;env=CN_TOKEN,CN_EMAIL,CN_SITE_PATH&amp;envDescription=These%20variables%2C%20are%20required%20to%20read%20your%20site%20data%20from%20the%20Collected%20Notes%20API.&amp;envLink=https%3A%2F%2Fcollectednotes.com%2Faccounts%2Fme%2Ftoken"><img src="https://vercel.com/button" alt="Deploy with Vercel"></a></p>
+<h3>Step 2: Configure your static website</h3>
+<p>When prompted for your environmental variables use these values shown in your <a href="https://collectednotes.com/sites/static">static deployments page</a>.</p>
+<h3>Step 3: Tell Collected Notes about your static website domain</h3>
+<p>Last step. Simply add the domain of your static website deploymenty on your site settings. Go to “Edit Site” &gt; Advanced and enter your domain.</p>
+<p>This will enable a new visibility option for your notes. All notes marked as “Showing on site” <strong>will automatically show up on your static site!</strong></p>
+<p><a href="https://alejandrocrosa.com">Here’s a sample static website ↗</a></p>
+<h1>🎉</h1>
+
+            </main>
+            <footer>
+                <a class="previous" href="/blog/new-format-toolbar/">&larr; New format toolbar</a>
+                <a class="next" href="/blog/initial-support-for-front-matter/">Initial support for front matter &rarr;</a>
+            </footer>
+        </body>
+    </html>

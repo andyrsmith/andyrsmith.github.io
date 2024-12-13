@@ -1,0 +1,58 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Initial support for front matter</title>
+        <meta name="description" content="Front..."/>
+        <link rel="stylesheet" href="/css/global.css" />
+    </head>
+        <body class="post">
+            <header>
+                <a href="/blog/">&larr; back</a>
+            </header>
+            <main>
+                <hr>
+<h2>title: Initial support for front matter
+tag: front matter, markdown, blogging
+image: <img src="https://photos.collectednotes.com/photos/14/5c93e0a5-8288-4b12-b1e4-e871f39a19fa" alt="frontmatter"></h2>
+<h1>Initial support for front matter</h1>
+<p><a href="https://jekyllrb.com/docs/front-matter/">Front matter</a> allows people to embed metadata information inside notes.
+One common use case is to use Collected Notes as a CMS for posts containing extra information (like tags, custom layouts, or additional metadata).</p>
+<h3>Custom paths</h3>
+<p>Front matter allows you to customize the path for a note (instead of using the default path generated from the note title).</p>
+<p>Here’s one example of a note containing a custom path, instead of the generated one:
+<a href="https://collectednotes.com/alejandro/some-custom-path">https://collectednotes.com/alejandro/some-custom-path</a></p>
+<pre><code class="language-markdown">---
+path: some-custom-path
+---
+
+# testing how front matter takes precedence over this title
+
+Isn&amp;#39;t this great!?
+
+</code></pre>
+<h3>Custom image headers</h3>
+<p>Another trick you can do is add an image inside front matter and that will be used as the embed image for the note. (That’s what I did for this note 😅)</p>
+<pre><code class="language-markdown">---
+title: Initial support for front matter
+tag: front matter, markdown, blogging
+image: ![frontmatter](https://photos.collectednotes.com/photos/14/5c93e0a5-8288-4b12-b1e4-e871f39a19fa)
+---
+
+# Initial support for front matter
+…
+
+</code></pre>
+<h3>What’s coming up</h3>
+<p>We’re about to launch support for external static websites powered by Collected Notes. I think this will be a huge opportunity, allowing people to create custom websites with the convenience of updating them directly from Collected Notes. No re-deploy necessary.</p>
+<p>Our first integration will work with <a href="https://vercel.com">Vercel</a>, updates soon!</p>
+
+            </main>
+            <footer>
+                <a class="previous" href="/blog/static-websites/">&larr; Static Websites</a>
+                <a class="next" href="/blog/webhooks/">Webhooks &rarr;</a>
+            </footer>
+        </body>
+    </html>
